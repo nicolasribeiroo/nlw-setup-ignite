@@ -3,7 +3,7 @@ import { FastifyRequest } from "fastify";
 import { z } from "zod";
 import { prisma } from "../../lib/prisma";
 
-export async function HabitRoute(req: FastifyRequest) {
+export async function CreateHabit(req: FastifyRequest) {
   const createHabitBody = z.object({
     title: z.string(),
     weekDays: z.array(z.number().min(0).max(6)),
