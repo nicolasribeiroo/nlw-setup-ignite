@@ -37,7 +37,7 @@ export async function DayRoute(req: FastifyRequest) {
 
   const completedHabits = day?.dayHabits.map((dayHabit) => {
     return dayHabit.habit_id;
-  });
+  }) ?? [];
 
   return {
     possibleHabits,
