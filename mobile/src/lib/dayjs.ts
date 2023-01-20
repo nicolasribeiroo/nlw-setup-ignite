@@ -1,4 +1,4 @@
 import dayjs from "dayjs";
-import "dayjs/locale/en";
+import "dayjs/locale/pt-br";
 
-dayjs.locale("en");
+dayjs.locale("pt-br");
